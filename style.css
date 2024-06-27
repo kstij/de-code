@@ -8405,6 +8405,19 @@ align-content: center;
 align-items: center;
 } */
 
+.counduct {
+    width: 70%;
+    text-align: left;
+}
+
+.conduct h3 {
+    font-size: 2.2rem;
+    font-weight: 500;
+}
+
+.conduct p, .conduct ul {
+    font-size: 1.4rem;
+}
 
 /* Style the counter cards */
 
@@ -8546,9 +8559,6 @@ align-items: center;
         align-content: center;
         justify-content: center;
         margin-bottom: 11px;
-    }
-    .workshop_div {
-        height: 245vh;
     }
     .work-btn {
         padding-top: 20%;
