@@ -8,19 +8,19 @@ const mworkshopcard = [
     {
         workshopname: 'Fetch.AI Hackathon',
         workshopimg: 'fetchai.jpg',
-        workshoplink: '#',
+        workshoplink: 'event2.html',
         date: '2013-09-18',
     },
     {
         workshopname: 'Hack4India',
         workshopimg: 'hfi.jpg',
-        workshoplink: '#',
+        workshoplink: 'event3.html',
         date: '2022-06-30', // Corrected the date format to 'YYYY-MM-DD
     },
     {
         workshopname: 'Web3Sangam',
         workshopimg: 'hfi.jpg',
-        workshoplink: '#',
+        workshoplink: 'event4.html',
         date: '2023-01-12',
     },
 ];
