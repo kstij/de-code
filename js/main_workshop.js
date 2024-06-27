@@ -1,27 +1,21 @@
 const mworkshopcard = [
     {
-        workshopname: 'DeCode Devs',
-        workshopimg: 'devs.jpg',
-        workshoplink: '#',
-        date: '2024-11-20'
-    },
-    {
-        workshopname: 'Fetch.AI Hackathon',
-        workshopimg: 'fetchai.jpg',
-        workshoplink: '#',
-        date: '2013-09-18'
-    },
-    {
-        workshopname: 'Hack4India',
-        workshopimg: 'hfi.jpg',
-        workshoplink: '#',
-        date: '2022-06-31' // Note: This date is invalid (June 31st doesn't exist), should be '2022-06-30' for the example to work correctly
-    },
-    {
-        workshopname: 'Web3Sangam',
-        workshopimg: 'hfi.jpg',
-        workshoplink: '#',
-        date: '2023-01-12'
+        workshopname:'DeCode Devs',
+        workshopimg:'devn.jpeg',
+        workshoplink:'#' //workshop/git and github/git-and-github.html
+        
+    },{
+        workshopname:'Fetch.AI Hackathon',
+        workshopimg:'fetchai.jpg',
+        workshoplink:'#'
+    },{
+        workshopname:'Hack4India',
+        workshopimg:'hfi.jpg',
+        workshoplink:'#'
+    },{
+         workshopname:'Web3Sangam',
+        workshopimg:'web3.jpg',
+        workshoplink:'#'
     },
 ];
 
