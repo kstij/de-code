@@ -27,13 +27,13 @@ var teamMember = [{
 {
     name: 'Reedham Pujara',
     designation: 'Co-founder @QWACK',
-    image: './images/Team/reedham.jpg',
+    image: './images/Team/reedham.jpeg',
     linkedin: 'https://www.linkedin.com/in/reedham-pujara/',
     portfolio: 'https://github.com/Reedham20'
 }, {
     name: 'Sneha Singh',
     designation: 'Web Developer',
-    iimage: './images/Team/sneha.jpg',
+    image: './images/Team/sneha.png',
     linkedin: 'https://www.linkedin.com/in/sneha-singh-636578273/',
     portfolio: 'https://github.com/Sneha6003'
 },
@@ -100,13 +100,13 @@ var teamMember = [{
 } , {
     name: 'Parv Parreek',
     designation: 'ML Engineer',
-    image: './images/Team/Parv.png',
+    image: './images/Team/parv.png',
     linkedin: 'https://www.linkedin.com/in/parvpareek',
     portfolio: 'https://parvpareek.github.io/'
 } , {
     name: 'Virengiri Goswami',
     designation: 'Co-founder Qubit-it-solutions',
-    image: './images/Team/Virengiri.jpg',
+    image: './images/Team/virengiri.jpg',
     linkedin: 'https://www.linkedin.com/in/virengiri-goswami',
     portfolio: 'https://github.com/Veerengiri'
 } , {
