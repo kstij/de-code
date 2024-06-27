@@ -244,11 +244,11 @@ p.lead {
     background: #ffffff;
     background: #ffffff;
     /* Old browsers */
-    background: -moz-linear-gradient( top, #ffffff 0%, #B27ED6 68%, #ffffff 100%);
+    background: -moz-linear-gradient( top, #ffffff 0%, #ffffff 68%, #ffffff 100%);
     /* FF3.6-15 */
-    background: -webkit-linear-gradient( top, #ffffff 0%, #B27ED6 68%, #ffffff 100%);
+    background: -webkit-linear-gradient( top, #ffffff 0%, #ffffff 68%, #ffffff 100%);
     /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient( to bottom, #ffffff 0%, #B27ED6 68%, #ffffff 100%);
+    background: linear-gradient( to bottom, #ffffff 0%, #ffffff 68%, #ffffff 100%);
     /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
     filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#edbb1a', endColorstr='#ffffff', GradientType=0);
     /* IE6-9 */
@@ -584,7 +584,8 @@ nav ul li.nav-btn a {
     transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.2s ease-in-out;
 }
 
-nav ul li.nav-btn a:hover {
+nav ul li.nav-
+ a:hover {
     background: #ffffff;
     background: #ffffff;
     /* Old browsers */
@@ -592,7 +593,7 @@ nav ul li.nav-btn a:hover {
     /* FF3.6-15 */
     background: -webkit-linear-gradient( top, #ffffff 0%, #ffffff 68%, #ffffff 100%);
     /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient( to bottom, #ffffff 0%, #ffffff 68%, #ffffff100%);
+    background: linear-gradient( to bottom, #ffffff 0%, #ffffff 68%, #ffffff 100%);
     /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
     filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#edbb1a', endColorstr='#edb80b', GradientType=0);
     /* IE6-9 */
@@ -8530,9 +8531,34 @@ align-items: center;
     
     transform: translateZ(-25px) rotateX(-90deg);
   }
-  
-
-
+.button{
+    display: flex;
+    justify-content: start;
+    position:relative;
+    left:150px;
+}  
+.Upcoming{
+    background-color: #ffffff;
+    border-radius: 30px;
+    width:140px;
+    height:50px;
+    font-size: 22px;
+}
+.Upcoming:hover{
+    background-color: #B27ED6;
+    box-shadow: 0 5px 10px rgb(241 196 24 / 20%);
+}
+.past{
+    background-color: #ffffff;
+    border-radius: 30px;
+    width:140px;
+    height:50px;
+    font-size: 22px;
+}
+.past:hover{
+    background-color: #B27ED6;
+    box-shadow: 0 5px 10px rgb(241 196 24 / 20%);
+}
 
 
 
