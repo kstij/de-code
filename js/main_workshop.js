@@ -7,15 +7,15 @@ const mworkshopcard = [
     },{
         workshopname:'Fetch.AI Hackathon',
         workshopimg:'fetchai.jpg',
-        workshoplink:'#'
+        workshoplink:'workshop/event2.html'
     },{
         workshopname:'Hack4India',
         workshopimg:'hfi.jpg',
-        workshoplink:'#'
+        workshoplink:'workshop/event3.html'
     },{
          workshopname:'Web3Sangam',
-        workshopimg:'web3.jpg',
-        workshoplink:'#'
+         workshopimg:'web3.jpg',
+         workshoplink:'workshop/event4.html'
     },
 ];
 

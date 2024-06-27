@@ -6,15 +6,15 @@ const workshopcard = [
    },{
        workshopname:'Fetch.AI Hackathon',
        workshopimg:'fetchai.jpg',
-       workshoplink:'#'
+       workshoplink:'event2.html'
    },{
        workshopname:'Hack4India',
        workshopimg:'hfi.jpg',
-       workshoplink:'#'
+       workshoplink:'event3.html'
    },{
         workshopname:'Web3Sangam',
        workshopimg:'hfi.jpg',
-       workshoplink:'#'
+       workshoplink:'event4.html'
    },
 ];
 
