@@ -2,7 +2,7 @@ const workshopcard = [
     {
         workshopname:'DeCode Devs',
        workshopimg:'devs.jpg',
-       workshoplink:'#' //workshop/git and github/git-and-github.html
+       workshoplink:'event1.html' //workshop/git and github/git-and-github.html
    },{
        workshopname:'Fetch.AI Hackathon',
        workshopimg:'fetchai.jpg',
