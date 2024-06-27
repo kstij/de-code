@@ -1,8 +1,9 @@
 const mworkshopcard = [
     {
          workshopname:'DeCode Devs',
-        workshopimg:'devs.jpg',
+        workshopimg:'devn.jpeg',
         workshoplink:'#' //workshop/git and github/git-and-github.html
+        
     },{
         workshopname:'Fetch.AI Hackathon',
         workshopimg:'fetchai.jpg',
@@ -13,7 +14,7 @@ const mworkshopcard = [
         workshoplink:'#'
     },{
          workshopname:'Web3Sangam',
-        workshopimg:'hfi.jpg',
+        workshopimg:'web3.jpg',
         workshoplink:'#'
     },
 ];
