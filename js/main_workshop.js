@@ -1,24 +1,30 @@
 const mworkshopcard = [
-  {
-    workshopname: "DeCode Devs",
-    workshopimg: "devn.jpeg",
-    workshoplink: "workshop/event1.html", //workshop/git and github/git-and-github.html
-  },
-  {
-    workshopname: "Fetch.AI Hackathon",
-    workshopimg: "fetchai.jpg",
-    workshoplink: "workshop/event2.html",
-  },
-  {
-    workshopname: "Hack4India",
-    workshopimg: "hfi.jpg",
-    workshoplink: "workshop/event3.html",
-  },
-  {
-    workshopname: "Web3Sangam",
-    workshopimg: "web3.jpg",
-    workshoplink: "workshop/event4.html",
-  },
+
+    {
+        workshopname: 'DeCode Devs',
+        workshopimg: 'devs.jpg',
+        workshoplink: 'workshop/event1.html',
+        date: '2024-11-20',
+    },
+    {
+        workshopname: 'Fetch.AI Hackathon',
+        workshopimg: 'fetchai.jpg',
+        workshoplink: 'workshop/event2.html',
+        date: '2013-09-18',
+    },
+    {
+        workshopname: 'Hack4India',
+        workshopimg: 'hfi.jpg',
+        workshoplink: 'workshop/event3.html',
+        date: '2022-06-30', // Corrected the date format to 'YYYY-MM-DD
+    },
+    {
+        workshopname: 'Web3Sangam',
+        workshopimg: 'hfi.jpg',
+        workshoplink: 'workshop/event4.html',
+        date: '2023-01-12',
+    },
+
 ];
 
 function display_upcoming_events() {
