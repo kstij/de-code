@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="workshop.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800"
+      rel="stylesheet"
+    />
+    <link
+      rel="shortcut icon"
+      href="../images/titlebg.png"
+      type="image/x-icon"
+    />
+
+    <title>Workshop</title>
+
+    <style>
+      body {
+        font-family: "Poppins", sans-serif;
+      }
+
+      .workshop-details {
+        margin-top: 10px;
+        font-size: 14px;
+        color: #f1eeee; /* Change to your desired font color */
+      }
+
+      .workshop-details ul {
+        list-style-type: disc;
+        padding-left: 20px;
+      }
+
+      .workshop-details li {
+        margin-bottom: 8px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div id="particles-js"></div>
+    <div id="workshops" class="workshop_div p-tb">
+      <section class="worksection">
+        <div class="sec-title text-center worktitle">
+          <h3>Decode Devs</h3>
+        </div>
+        <div class="workrow" pagename="work-page"></div>
+      </section>
+    </div>
+    <script>
+      const workshopcard = [
+        {
+          workshopname: "DeCode Devs",
+          workshopimg: "devn.jpeg",
+          workshoplink: "event1.html",
+          details: `
+Created a collaborative environment focused on enhancing the developer experience.
+Sponsored by GitHub and Fetch.ai, hosted at DevX with over 200 attendees.
+Featured 4 industry leaders sharing insights on technology and career development.
+Engaged participants with diverse activities, including guitar jamming, ice-breaking sessions, and personalized networking opportunities.
+`,
+        },
+      ];
+
+      var workRow = document.querySelectorAll(".workrow")[0];
+      for (let i = 0; i < workshopcard.length; i++) {
+        let work = document.createElement("div");
+        work.className = "workcolums";
+        let imgurl;
+
+        imgurl = "images/" + workshopcard[i].workshopimg;
+        work.innerHTML = `<a href="${workshopcard[i].workshoplink}" class="sess_card">
+        <div class="sesscardstext">${workshopcard[i].workshopname}</div>
+        <div class="sesscardsimg"><img class="sess_img" src="${imgurl}" alt="${workshopcard[i].workshopname}"></div>
+        <div class="workshop-details">
+          <ul>
+            <li>Created a collaborative environment focused on enhancing the developer experience.
+            <li>Sponsored by GitHub and Fetch.ai, hosted at DevX with over 200 attendees.
+            <li>Featured 4 industry leaders sharing insights on technology and career development.
+            <li>Engaged participants with diverse activities, including guitar jamming, ice-breaking sessions, and personalized networking opportunities.
+          </ul>
+        </div>
+      </a>`;
+
+        workRow.append(work);
+      }
+    </script>
+  </body>
+</html>
