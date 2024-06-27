@@ -93,6 +93,7 @@ clear: both;
 justify-content: center;
 }
 
+
 .worksection {
   width: 100%;
   padding: 0% 0px;
@@ -224,9 +225,6 @@ align-items: center;
    justify-content: center;
    margin-bottom: 11px;
    
-  }
-  .workshop_div{
-    height: 246vh;
   }
 }
 

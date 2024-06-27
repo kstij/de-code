@@ -1,8 +1,9 @@
 const mworkshopcard = [
     {
-         workshopname:'DeCode Devs',
-        workshopimg:'devs.jpg',
+        workshopname:'DeCode Devs',
+        workshopimg:'devn.jpeg',
         workshoplink:'#' //workshop/git and github/git-and-github.html
+        
     },{
         workshopname:'Fetch.AI Hackathon',
         workshopimg:'fetchai.jpg',
@@ -13,19 +14,52 @@ const mworkshopcard = [
         workshoplink:'workshop/event3.html'
     },{
          workshopname:'Web3Sangam',
-        workshopimg:'hfi.jpg',
-        workshoplink:'workshop/event4.html'
+         workshopimg:'web3.jpg',
+         workshoplink:'workshop/event4.html'
     },
 ];
 
-var mworkRow = document.querySelectorAll('.workrow')[0];
-for(let i=0;i<mworkshopcard.length;i++){
-    let work=document.createElement('div');
-    work.className='workcolums';
-    let imgurl;
-   
-        imgurl= 'workshop/images/' + mworkshopcard[i].workshopimg;
-        work.innerHTML='<a href="'+mworkshopcard[i].workshoplink +' "class="sess_card"><div class="sesscardstext">'+mworkshopcard[i].workshopname+'</div><div class="sesscardsimg"><img class="sess_img" src="'+imgurl+'" alt="'+mworkshopcard[i].workshopname+'"></div></a>';
-    
-mworkRow.append(work);    
+function display_upcoming_events() {
+    const eventsContainer = document.querySelector('.workrow');
+    eventsContainer.innerHTML = '';
+    const today = new Date();
+    const upcomingEvents = mworkshopcard.filter(event => new Date(event.date) >= today);
+    upcomingEvents.forEach(event => {
+        const work = document.createElement('div');
+        work.className = 'workcolums';
+        const imgurl = 'workshop/images/' + event.workshopimg;
+        work.innerHTML = `
+            <a href="${event.workshoplink}" class="sess_card">
+                <div class="sesscardstext">${event.workshopname}</div>
+                <div class="sesscardsimg">
+                    <img class="sess_img" src="${imgurl}" alt="${event.workshopname}">
+                </div>
+            </a>`;
+        eventsContainer.appendChild(work);
+    });
 }
+
+function display_past_events() {
+    const eventsContainer = document.querySelector('.workrow');
+    eventsContainer.innerHTML = '';
+    const today = new Date();
+    const pastEvents = mworkshopcard.filter(event => new Date(event.date) < today);
+    pastEvents.forEach(event => {
+        const work = document.createElement('div');
+        work.className = 'workcolums';
+        const imgurl = 'workshop/images/' + event.workshopimg;
+        work.innerHTML = `
+            <a href="${event.workshoplink}" class="sess_card">
+                <div class="sesscardstext">${event.workshopname}</div>
+                <div class="sesscardsimg">
+                    <img class="sess_img" src="${imgurl}" alt="${event.workshopname}">
+                </div>
+            </a>`;
+        eventsContainer.appendChild(work);
+    });
+}
+
+// Initially display upcoming events when the page loads
+document.addEventListener('DOMContentLoaded', () => {
+    display_upcoming_events();
+});
