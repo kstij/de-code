@@ -117,7 +117,7 @@ var teamMember = [{
     portfolio: 'https://portfolio-website-nualjr7xj-nishtha-pitrodas-projects.vercel.app/'
 } , {
     name: 'Dinesh Talwadkar',
-    designation: 'S WEat Delemate',
+    designation: 'Software Engineer at Delemate',
     image: './images/Team/dinesh.png',
     linkedin: 'https://www.linkedin.com/in/dineshtalwadker/',
     portfolio: 'https://dinxsh.xyz/'
