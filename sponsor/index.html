@@ -6,10 +6,10 @@
     <style>
         .pdf {
             width: 100%;
-            aspect-ratio: 4 / 3;
+            height: 100%;
+            border: none;
         }
 
-        .pdf,
         html,
         body {
             height: 100%;
@@ -21,14 +21,8 @@
         h3 {
             text-align: center;
         }
-
     </style>
     <body>
-        <object class="pdf" 
-                data=
-    "./DD 2.0  Brochure.pdf"
-                width="800"
-                height="500">
-        </object>
+        <iframe class="pdf" src="./brochure.pdf"></iframe>
     </body>
 </html>
