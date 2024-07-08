@@ -134,7 +134,18 @@ img {
 
 .wrapper {
     overflow: hidden;
+    image-rendering: auto;
+    background-size: 100dvw;
+    animation-name: slidechange;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: backwards; 
+    background-position: top;
+    background-size: contain;
+    background-repeat: no-repeat;
 }
+
 
 input[type="text"],
 input[type="password"],
@@ -491,7 +502,6 @@ header {
     position: absolute;
     top: 0;
     width: 100%;
-    z-index: 1;
     padding-top: 42px;
     padding-bottom: 24px;
     transition: all 300ms;
@@ -502,7 +512,6 @@ header.light {
     position: relative;
     top: 0;
     width: 100%;
-    z-index: 1;
     padding-top: 15px;
     padding-bottom: 15px;
     transition: all 300ms;
@@ -699,28 +708,18 @@ header.fixed {
 
 .hero-main {
     display: flex;
-    padding-top: 100px;
+    /* padding-top: 100px; */
     color: #fff;
     position: relative;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
     height: 100vh;
+    width: 100dvw;
+    z-index: 5 ;
     padding-bottom: 60px;
     padding-top: 60px;
     overflow: hidden;
     align-items: center;
     border-bottom: 5px solid #ffffff;
-}
-
-.hero-main:before {
-    position: absolute;
-    background: rgba(0, 0, 0, 0.9);
-    content: "";
-    left: 0;
-    top: 0;
-    height: 100%;
-    width: 100%;
+    background-color: rgba(0, 0, 0, 0.67);
 }
 
 .layout-2 .hero-left p {
@@ -1844,10 +1843,10 @@ html {
     z-index: 2;
 }
 
-.platinum-layout.hero-main::before {
+/* .platinum-layout.hero-main::before {
     opacity: 0;
     visibility: hidden;
-}
+} */
 
 .platinum-animation {
     height: 740px;
@@ -2131,6 +2130,7 @@ html {
     transition: all 1000ms 1.5s ease;
 }
 
+
 .mercury-layout.hero-main .container,
 .hero-main.mercury-layout .row {
     height: 100%;
@@ -2141,9 +2141,9 @@ html {
     background-position: center right !important;
 }
 
-.mercury-layout.hero-main::before {
+/* .mercury-layout.hero-main::before {
     display: none;
-}
+} */
 
 
 /*
@@ -2743,6 +2743,27 @@ h2.section-heading span {
     transform: translateX(-50%);
     bottom: 0;
     transition: all 1000ms;
+}
+/* #about{
+    background-color: rgba(0, 0, 0, 0.28) !important;
+    z-index: 2;
+} */
+@keyframes slidechange {
+    0%{
+        background-image: url("images/background.jpeg");
+    }
+    25%{
+        background-image: url("images/back3.jpeg");
+    }
+    50%{
+        background-image: url("images/back5.jpeg");
+    }
+    75%{
+        background-image: url("images/back6.jpeg");
+    }
+    100%{
+        background-image: url("images/back4.jpeg");
+    }
 }
 
 .visible.about-mercury-animation .mercury-base {

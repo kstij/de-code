@@ -57,6 +57,10 @@
   }
 }
 @media only screen and (max-width: 1199px) {
+
+  .wrapper{
+    background-size: 130dvw;
+  }
   nav ul li {
     margin-left: 30px;
   }
@@ -524,6 +528,7 @@
   }
 }
 @media (min-width: 768px) and (max-width: 991px) {
+  
   .container {
     max-width: calc(100% - 48px);
   }
@@ -575,6 +580,13 @@
   }
 }
 @media (min-width: 30px) and (max-width: 767px) {
+  .wrapper{
+    animation: none;
+  }
+  .hero-main{
+    background-image: url('/images/heroimage/hero9.jpg');
+    background-size: cover;
+  }
   .container {
     max-width: calc(100% - 24px) !important;
   }
@@ -1453,6 +1465,7 @@
   }
 }
 @media only screen and (max-height: 766px) {
+  
   .hero-main {
     min-height: 100vh;
     height: auto;
